@@ -20,6 +20,33 @@
           padding: 8px;
           text-align: center;
         }
+        .table-container {
+            width: 100%;  /* 容器宽度占满父元素 */
+            overflow-x: auto;  /* 启用水平滚动 */
+            margin: 20px 0;  /* 添加一些外边距 */
+        }
+
+        table {
+            width: 100%;  /* 表格宽度占满容器 */
+            border-collapse: collapse;  /* 边框合并 */
+        }
+
+        th, td {
+            border: 1px solid #ddd;  /* 表格单元格边框 */
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        /* 响应式调整 - 小屏设备 */
+        @media (max-width: 768px) {
+            th, td {
+                padding: 12px 8px;  /* 增加表格单元格的内边距 */
+            }
+        }
       </style>
 </head>
 <body>
